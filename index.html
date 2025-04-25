@@ -436,6 +436,65 @@
             font-size: 1rem;
         }
 
+        .pricing-section {
+            background: var(--muted);
+            padding: 4rem 2rem;
+            border-radius: var(--radius);
+            margin: 4rem 0;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: var(--background);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1.25rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pricing-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .pricing-table tr:hover {
+            background: var(--muted);
+        }
+
+        .pricing-feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-feature i {
+            color: var(--primary);
+        }
+
+        .pricing-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .pricing-period {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -447,6 +506,10 @@
             
             .content {
                 padding: 2rem 1rem;
+            }
+            .pricing-table {
+                display: block;
+                overflow-x: auto;
             }
         }
     </style>
@@ -633,6 +696,134 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155710122!2d-73.987844924164!3d40.757978971389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1681234567890!5m2!1sen!2sus" 
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </section>
+
+        <section class="pricing-section">
+            <h2 class="section-title">Course Comparison</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Course Details</th>
+                        <th>Web Development</th>
+                        <th>JavaScript</th>
+                        <th>Python</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Duration</td>
+                        <td>8 weeks</td>
+                        <td>10 weeks</td>
+                        <td>12 weeks</td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>Beginner to Intermediate</td>
+                        <td>Intermediate to Advanced</td>
+                        <td>Beginner to Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Prerequisites</td>
+                        <td>None</td>
+                        <td>Basic HTML & CSS</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Projects</td>
+                        <td>5 Real-world Projects</td>
+                        <td>8 Interactive Projects</td>
+                        <td>10 Data Science Projects</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td>Community Forum</td>
+                        <td>Community + Email Support</td>
+                        <td>Community + Email + Live Q&A</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate</td>
+                        <td class="pricing-feature"><i class="fas fa-check"></i> Yes</td>
+                        <td class="pricing-feature"><i class="fas fa-check"></i> Yes</td>
+                        <td class="pricing-feature"><i class="fas fa-check"></i> Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>
+                            <span class="pricing-price">Rs. 99</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                        <td>
+                            <span class="pricing-price">Rs. 129</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                        <td>
+                            <span class="pricing-price">Rs. 149</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="pricing-section">
+            <h2 class="section-title">Learning Path Comparison</h2>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Learning Path</th>
+                        <th>Frontend Developer</th>
+                        <th>Full Stack Developer</th>
+                        <th>Data Scientist</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Duration</td>
+                        <td>6 months</td>
+                        <td>9 months</td>
+                        <td>12 months</td>
+                    </tr>
+                    <tr>
+                        <td>Courses Included</td>
+                        <td>HTML, CSS, JavaScript, React</td>
+                        <td>Frontend + Backend + Database</td>
+                        <td>Python, Data Analysis, ML, AI</td>
+                    </tr>
+                    <tr>
+                        <td>Projects</td>
+                        <td>15+ Projects</td>
+                        <td>25+ Projects</td>
+                        <td>20+ Projects</td>
+                    </tr>
+                    <tr>
+                        <td>Career Support</td>
+                        <td>Resume Review</td>
+                        <td>Resume + Portfolio Review</td>
+                        <td>Full Career Support</td>
+                    </tr>
+                    <tr>
+                        <td>Job Guarantee</td>
+                        <td class="pricing-feature"><i class="fas fa-times"></i> No</td>
+                        <td class="pricing-feature"><i class="fas fa-check"></i> Yes</td>
+                        <td class="pricing-feature"><i class="fas fa-check"></i> Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td>
+                            <span class="pricing-price">Rs. 999</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                        <td>
+                            <span class="pricing-price">Rs. 1499</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                        <td>
+                            <span class="pricing-price">Rs. 1999</span>
+                            <span class="pricing-period">one-time</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
 
